@@ -75,4 +75,15 @@
         }
     });
 </script>
+<img src="URL_DA_NOVA_IMAGEM.jpeg" alt="Descrição da imagem">
+<div>
+    <h2>Título do Segundo Post</h2>
+    <p>Por: Tatiana Burkater</p>
+    <p>Texto do seu novo post aqui...</p>
+    <blockquote>
+        <p><em>"Frase marcante aqui."</em> — Nome do Autor</p>
+    </blockquote>    
+    <button>❤️<span>0</span></button>
+    <button>👎<span>0</span></button>
+</div>
 </html>

@@ -55,19 +55,25 @@
     <p><em>"Na vida, não existe nada a temer, mas a entender."</em> — Marie Curie</p>
     </blockquote>   
     <button>❤️<span>0</span></button>
-    <button>👎<span>0</span></button>
+    <button>👎<span>5</span></button>
     </div>    
     </main>  
 
 </body>
 <script>
-const botao = document.querySelector("button");
-    botao.addEventListener("click", botaoClicado);
-    function botaoClicado() {
-let texto = botao.querySelector("span");
-texto.textContent++;
-}
+    const botoes = document.querySelectorAll("button");
 
+    botoes.forEach(function(botao) {
+        botao.addEventListener("click", botaoClicado);
+
+        function botaoClicado() {
+            console.log;
+            let texto = botao.querySelector("span");
+            if (texto) {
+                texto.textContent++;
+            }
+        }
+    });
 </script>
 </html>
 

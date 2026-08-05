@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades Científicas</title>
+</head>
+    <style>
+        header {
+         background-color: #008080;
+         color: #FFFFFF;
+         text-align: center;
+         max-width: 800px;
+         margin: 0 auto;
+         padding: 16px;
+         border: 5px solid #191970;
+}
+        main {
+        display: flex;
+        background-color: #FFFFFF;
+        color: #008080;
+        text-align: left;
+        max-width: 800px;
+        margin: 0 auto;
+        gap: 20px;
+}
+        blockquote {
+        display: flex;    
+        background-color: #FFFFFF;
+        color: #008080;
+        text-align: left;
+        max-width: 800px;
+        margin: 0 auto;  
+        gap: 20px;
+}
+        img {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+}
+    </style>
+<body>
+    <header>
+    <h1>Ciência no Cotidiano</h1>
+    </header>
+
+    <main>
+    <img src="marie.jpeg" alt="Foto da Marie Curie">
+    <div>
+    <h2>Meu primeiro post</h2>
+    <p>Por: Tatiana Burkater</p>
+    <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar fatos científicos e curiosidades do dia a dia explicados de um jeito leve e sem complicações.
+     Um espaço para quem gosta de entender como o mundo funciona, sem termos difíceis</p>
+    <blockquote>
+    <p><em>"Na vida, não existe nada a temer, mas a entender."</em> — Marie Curie</p>
+    </blockquote>   
+    <button>❤️<span>0</span></button>
+    <button>👎<span>5</span></button>
+    </div>    
+    </main>  
+
+</body>
+<script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(function(botao) {
+        botao.addEventListener("click", botaoClicado);
+
+        function botaoClicado() {
+            console.log;
+            let texto = botao.querySelector("span");
+            if (texto) {
+                texto.textContent++;
+            }
+        }
+    });
+</script>
+</html>
